@@ -1,0 +1,40 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        double[] gru = {3.3, 5.2, -8.4, -9.4, 22.5, -56.9, 37.9, -12.8, 53.4, -54.6, 13.01, 37.62, -53.77, 24.8, -29.04};
+        double sai = 0;
+        int git = 0;
+        boolean b = false;
+        for (double dub : gru) {
+            if (dub < 0) {
+                b = true;
+            } else if (b){
+                git++;
+                sai += dub;
+            }
+        }
+        System.out.println(sai / git);
+
+        }
+
+    public static void hello(){
+        int num[]={-4,-2,2,3,6,8};
+        for (int i = 0; i < num.length ; i++) {
+            int min = num[i];
+            int max = num[i];
+            for (int j = 0; j <num.length; j++) {
+                if (num[i]<min);
+                min = num[i];
+                max = i;
+                if (i != max){
+                    int temp = num[i];
+                    num[i] = num[max];
+                    num[max] = temp;
+
+                }
+            }
+        }
+    }
+}
